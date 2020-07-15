@@ -9,14 +9,17 @@ async function createSampleTodoItems() {
     const todo1 = await TodoItem.create({
       task: "Clean bedroom",
       important: false,
+      toDoListId: 3
     });
     const todo2 = await TodoItem.create({
       task: "Learn to code",
       important: true,
+      toDoListId: 1
     });
     const todo3 = await TodoItem.create({
       task: "Have fun",
       important: true,
+      toDoListId: 2
     });
 
     return [todo1, todo2, todo3].map(item => item.get({ plain: true }));
