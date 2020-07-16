@@ -83,7 +83,7 @@ async function findTags(){
         // console.log("all items test", allTagsWithItems)
         
         const plainAllTagsWithItems = allTagsWithItems.map((tag) =>
-        tag.get({plain: true}))
+        tag.get({plain: true}).tags)
         // console.log("plain test", plainAllTagsWithItems)
 
     } catch(error){
