@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       itemTag.belongsTo(models.tag)
-      itemTag.belongsTo(modlels.toDoItem)
+      itemTag.belongsTo(models.toDoItem)
     }
   };
   itemTag.init({
